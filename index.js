@@ -9,9 +9,9 @@ function getPosts() {
             for (post of posts) {
                 let cont =`<div class = "data">
                     <h3>${post.title}</h3>
-                    <h4>bbbbbbbbbbbbbbbbbbbbbbbb</h4>
+                    <h4>${post.body}b</h4>
                 </div>`;
-                document.getElementById("posts").innerHTML = cont;
+                document.getElementById("post").innerHTML += cont;
             }
         } else {
                 alert("error")
