@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-list {
+  width: 30%;
+  background-color: #5a20cb;
+  color: white;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.contact {
+  padding: 15px;
+  border-bottom: 1px solid #44107a;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: #4b00c4;
+}
+
+.contact .name {
+  font-weight: bold;
+}
+
+.message-list {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.message {
+  display: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.message.active {
+  display: block;
+}
