@@ -1,0 +1,22 @@
+body{background:linear-gradient(red, blue);
+height: 100vh;}
+
+.flex{
+    display: flex;
+
+}
+.data{
+    margin-left: 20px;
+    padding: 20px;
+    background-color: bisque;
+    width: 70%;
+    height: 100vh;
+}
+.users{
+    padding: 20px;
+margin: 0 auto;
+    width: 30%;
+    background-color: blueviolet;
+}
+.usercontainer{width: 30%;
+background-color: yellow;}
