@@ -1,13 +1,13 @@
-function getPosts() {
+function getPosts(id) {
     let request = new XMLHttpRequest()
-    request.open("GET","https://jsonplaceholder.typicode.com/posts");
+    request.open("GET","https://jsonplaceholder.typicode.com/posts?userId="+id);
     request.responseType = "json";
     request.send();
     request.onload = function () {
         if (request.status >= 200 && request.status < 300) {
             let posts = request.response;
             for (post of posts) {
-                let cont =`<div>
+                let cont =`<div onclick="click()">
                     <h3>${post.title}</h3>
                     <h4>${post.body}b</h4>
                 </div>`;
@@ -18,7 +18,7 @@ function getPosts() {
         }
     }
 }
-getPosts();
+
 function getUsers() {
     let request = new XMLHttpRequest()
     request.open("GET","https://jsonplaceholder.typicode.com/users");
@@ -44,4 +44,8 @@ function getUsers() {
         }
     }
 }
+function click() {
+    console.log(`hi`)
+}
+getPosts(2);
 getUsers();
