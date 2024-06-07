@@ -11,7 +11,7 @@ function fetchUsers() {
       populateUsers(users);
     }
   };
-  xhr.send();
+  xhr.send(); 
 }
 
 function populateUsers(users) {
