@@ -6,8 +6,13 @@ function getPosts() {
     request.onload = function () {
         if (request.status >= 200 && request.status < 300) {
             let posts = request.response;
+            document.getElementById("posts").innerHTML = cont
             for (post of posts) {
-                document.getElementById("content").innerHTML += `<h1>${post.title}</h1>`
+                let cont =`<div class = "data">
+                    <h3>${post.title}</h3>
+                    <h4>bbbbbbbbbbbbbbbbbbbbbbbb</h4>
+                </div>`;
+                document.getElementById("posts").innerHTML = cont;
             }
         } else {
                 alert("error")
