@@ -7,7 +7,10 @@ function getPosts() {
         if (request.status >= 200 && request.status < 300) {
             let posts = request.response;
             for (post of posts) {
-                document.getElementById("content").innerHTML += `<h1>${post.title}</h1>`
+                `<div class = "post">
+                    <h3>${post.title}</h3>
+                    <h4>bbbbbbbbbbbbbbbbbbbbbbbb</h4>
+                </div>`
             }
         } else {
                 alert("error")
