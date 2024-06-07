@@ -7,10 +7,10 @@ function getPosts() {
         if (request.status >= 200 && request.status < 300) {
             let posts = request.response;
             for (post of posts) {
-                let cont =`
+                let cont =`<div>
                     <h3>${post.title}</h3>
                     <h4>${post.body}b</h4>
-                `;
+                </div>`;
                 document.getElementById("post").innerHTML += cont;
             }
         } else {
@@ -19,8 +19,8 @@ function getPosts() {
     }
 }
 getPosts();
-
-function getusers() {
+let 
+function getUsers() {
     let request = new XMLHttpRequest()
     request.open("GET","https://jsonplaceholder.typicode.com/users");
     request.responseType = "json";
@@ -45,4 +45,4 @@ function getusers() {
         }
     }
 }
-getusers();
+getUsers();
