@@ -1,1 +1,40 @@
+body {
+  background: linear-gradient(red, blue);
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+  display: flex;
+}
+.dataContainer {
+  margin-left: 20px;
+  padding: 10px 10px;
+  background-color: rgb(190, 187, 184);
+  width: 70%;
+  height: 100vh;
+}
+.data {
+  color: rgb(10, 7, 7);
+  padding: 30px;
+  margin: 10px auto;
+  width: 80%;
+  background-color: rgb(119, 194, 245);
+  border-radius: 5px;
+}
+
+.users {
+  color: white;
+  padding: 20px;
+  margin: 10px auto;
+  width: 80%;
+  background: linear-gradient(blue, black);
+  border-radius: 30px;
+}
+.usercontainer {
+  width: 30%;
+  padding-top: 10px;
+}
+.selected {
+  border: 5px solid rgb(255, 244, 239);
 }
