@@ -6,8 +6,9 @@ function getPosts(id) {
     request.onload = function () {
         if (request.status >= 200 && request.status < 300) {
             let posts = request.response;
+             document.getElementById("post").innerHTML = "";
             for (post of posts) {
-                let cont ==`
+                let cont =`
                 
                 <div id="post" class="data">
 
@@ -32,6 +33,7 @@ function getUsers() {
     request.onload = function () {
         if (request.status >= 200 && request.status < 300) {
             let users = request.response;
+            document.getElementById("users").innerHTML = "";
             for (user of users) {
                 let data = ` 
 

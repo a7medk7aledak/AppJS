@@ -7,13 +7,14 @@ body {
   display: flex;
   display: flex;
 }
+
 .dataContainer {
   margin-left: 20px;
   padding: 10px 10px;
   background-color: rgb(230, 225, 225);
-  width: 70%;
   height: 1000vh;
 }
+
 .data {
   width: 90%;
   background-color: white;
@@ -26,20 +27,23 @@ body {
 h3,
 h2 {
   margin: 0;
+  padding: 5px 10px;
 }
+
 .users {
-  color: rgb(0, 0, 0);
-  padding: 20px;
+  padding: 10px 20px;
   margin: 10px auto;
-  width: 80%;
+  width: 90%;
   background: rgb(255, 255, 255);
   border-radius: 50px;
   cursor: pointer;
 }
+
 .users-container {
-  width: 30%;
+  width: 35%;
   padding-top: 10px;
 }
+
 .selected {
   border: 5px solid rgb(255, 244, 239);
 }
