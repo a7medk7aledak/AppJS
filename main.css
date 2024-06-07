@@ -23,12 +23,16 @@ body {
   border-radius: 5px;
 }
 
+h3,
+h2 {
+  margin: 0;
+}
 .users {
   color: white;
   padding: 20px;
   margin: 10px auto;
   width: 80%;
-  background: linear-gradient(blue, black);
+  background: linear-gradient(rgb(31, 31, 112), black);
   border-radius: 30px;
 }
 .usercontainer {
