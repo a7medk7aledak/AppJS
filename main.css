@@ -17,8 +17,9 @@ body {
 .data {
   color: rgb(10, 7, 7);
   margin: 10px auto;
-  padding: ;
+  padding: 10px;
   border-radius: 5px;
+  
 }
 
 .users {
