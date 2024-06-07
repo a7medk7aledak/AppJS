@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(red, blue);
+  background: linear-gradient(45deg, rgb(3, 3, 180), rgb(185, 0, 0));
   height: 100vh;
 }
 
@@ -10,16 +10,17 @@ body {
 .dataContainer {
   margin-left: 20px;
   padding: 10px 10px;
-  background-color: rgb(190, 187, 184);
+  background-color: rgb(230, 225, 225);
   width: 70%;
-  height: 100vh;
+  height: 1000vh;
 }
 .data {
+  width: 90%;
+  background-color: white;
   color: rgb(10, 7, 7);
   margin: 10px auto;
-  padding: 10px;
+  padding: 5px;
   border-radius: 5px;
-  
 }
 
 h3,
@@ -27,14 +28,15 @@ h2 {
   margin: 0;
 }
 .users {
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px;
   margin: 10px auto;
   width: 80%;
-  background: linear-gradient(rgb(31, 31, 112), black);
-  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  border-radius: 50px;
+  cursor: pointer;
 }
-.usercontainer {
+.users-container {
   width: 30%;
   padding-top: 10px;
 }
